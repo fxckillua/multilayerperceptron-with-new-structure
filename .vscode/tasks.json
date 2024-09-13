@@ -1,0 +1,25 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+	  {
+		"label": "build C++",
+		"type": "shell",
+		"command": "g++",  // Alterar gcc para g++
+		"args": [
+		  "-Wall",
+		  "-Wextra",
+		  "-g3",
+		  "${file}",
+		  "-o",
+		  "${fileDirname}/output/${fileBasenameNoExtension}.exe"
+		],
+		"group": {
+		  "kind": "build",
+		  "isDefault": true
+		},
+		"problemMatcher": ["$gcc"],
+		"detail": "Compilação para C++ utilizando G++."
+	  }
+	]
+  }
+  
